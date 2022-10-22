@@ -3,7 +3,9 @@ import os
 from twilio.rest import Client
 
 
-# ----------Update This Info--------- -#
+EXC = "current,minutely,daily"
+
+# ----------UPDATE INFO BELOW--------- -#
 
 # Open Weather API Key
 KEY = os.environ.get("OWM_API_KEY")
@@ -21,8 +23,6 @@ twilio_phone = '***Your Twilio Number***'
 receiving_number = '***Number to receive text from Twilio number***'
 
 # ----------END OF UPDATES----------- #
-
-EXC = "current,minutely,daily"
 
 
 def check_for_rain(data):
